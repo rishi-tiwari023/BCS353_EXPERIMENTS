@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+</head>
+
+<body>
+    <table border="3" width="80%" cellpadding="10" cellspacing="0" align="center">
+        <tr style="background-color:hsl(21, 54%, 62%); border: 3px solid black; font
+style:italic;">
+            <td><img src="logo.jpg" height="100px" width="150px">
+            </td>
+            <td colspan="4" style="font-size:larger;"><b>
+                    <center>PRANVEER SINGH INSTITUTE OF
+                        TECHNOLOGY,
+                        KANPUR</center>
+                </b></td>
+        </tr>
+        <tr style="border:3px solid black;font-style:oblique">
+            <td style="background-color:#FDE7BB;"><a href="home.html">Home</a></td>
+            <td style="background-color:#FDE7BB;"><a href="login.html">Login</a></td>
+            <td style="background-color:#FDE7BB;"><a href="REGISTRATION.HTML">Registration</a>
+            </td>
+            <td style="background-color:#FDE7BB;"><a href="catalogue.html">Catalogue</a></td>
+            <td style="background-color:#FDE7BB;"><a href="cart.html">Cart</a></td>
+        </tr>
+        <tr style="border:  2px solid #370246;">
+            <td><a href="csebutton.html">CSE</a> </td>
+            <td colspan="4" rowspan="5" style="background-color:blanchedalmond;font
+style:oblique;">
+                <h2 align="center">CATALOGUE OF BOOKS</h2>
+                <table border="3" width="100%" cellpadding="10" cellspacing="0">
+                    <tr>
+                        <th>COVER</th>
+                        <th>BOOK NAME</th>
+                        <th>AUTHOR</th>
+                        <th>PUBLISHER</th>
+                        <th>PRICE</th>
+                        <th>ACTION</th>
+                    </tr>
+                    <!-- Book 1 -->
+                    <tr>
+                        <td><img src="https://m.media-amazon.com/images/I/61dpLaOyAAL._SY522_.jpg" alt="XML Bible"
+                                width="150" height="200"></td>
+                        <td>XML Bible</td>
+                        <td>Winston</td>
+                        <td>Wiley</td>
+                        <td>$40.5</td>
+                        <td><button onclick="addToCart('XML Bible')">Add to Cart</button></td>
+                    </tr>
+                    <!-- Book 2 -->
+                    <tr>
+                        <td><img src="https://m.media-amazon.com/images/I/81CDIGTNNFL._SY522_.jpg" alt="AI Book"
+                                width="150" height="200"></td>
+                        <td>AI</td>
+                        <td>S. Russell</td>
+                        <td>Princeton Hall</td>
+                        <td>$63</td>
+                        <td><button onclick="addToCart('AI')">Add to Cart</button></td>
+                    </tr>
+                    <!-- Book 3 -->
+                    <tr>
+                        <td><img src="https://m.media-amazon.com/images/I/51jfWc-0-PL._SY445_SX342_.jpg" alt="Java 2"
+                                width="150" height="200"></td>
+                        <td>Java 2</td>
+                        <td>Watson</td>
+                        <td>BPB Publications</td>
+                        <td>$35.5</td>
+                        <td><button onclick="addToCart('Java 2')">Add to Cart</button></td>
+                    </tr>
+                    <!-- Book 4 -->
+                    <tr>
+                        <td><img src="https://m.media-amazon.com/images/I/51JKFOPk-NL._SY522_.jpg"
+                                alt="HTML in 24 hours" width="150" height="200"></td>
+                        <td>HTML in 24 Hours</td>
+                        <td>Sam Peter</td>
+                        <td>Sam Publications</td>
+                        <td>$50</td>
+                        <td><button onclick="addToCart('HTML in 24 Hours')">Add to Cart</button></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        </tr>
+        <tr style="border: 2px solid #370246;">
+            <td><a href="ecebutton.html">ECE</a></td>
+        </tr>
+
+        <tr style="border: 2px solid #370246;">
+            <td><a href="eeebutton.html">EEE </a> </td>
+        </tr>
+
+        <tr style="border: 2px solid #370246;">
+            <td><a href="civilbutton.html">CIVIL</a> </td>
+        </tr>
+        <script>
+            function addToCart(bookName) {
+                alert(bookName + " has been added to your cart!");
+            }
+        </script>
+    </table>
+</body>
+
+</html>
